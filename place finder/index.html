@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html ng-app="myApp">
+
+<head>
+ 
+ <title>Place Finder</title>
+
+  <script src="angular.min.js"></script>
+  
+<script src="jquery.js"></script>
+<!-- Bootstrap core CSS -->
+ 
+ <link href="bootstrap.min.css" rel="stylesheet">
+  
+<link href="app.css" rel="stylesheet">  
+
+</head>
+<body>
+
+  
+<div role="navigation" class="navbar navbar-inverse">
+    
+  
+      <div class="container">
+        
+  <a class="navbar-brand"><img src="logo.png" width="300px"/></a>
+          
+<div class="navbar-form navbar-right" ng-controller="mainController">
+
+              
+<div class="form-group search-label" >
+                  I am Looking for  
+                  <select id="types" ng-model="types" class="form-control">
+                    
+<option name="atm">atm</option>
+            
+ <option name="bank" id="bank">bank</option>
+
+                 <option name="hospital">hospital</option>
+
+                    <option name="mosque">mosque</option>
+
+                    <option name="school">school</option>
+  
+                  <option name="university">university</option>           
+  
+                </select>
+                  Near 
+              </div>
+            
+  <div class="form-group ">                  
+                
+  <input id="area" class="form-control" name="area" ng-model="area" placeholder="Enter your address"/>
+    
+   </div>
+              
+<div class="form-group">
+                 
+ <button class="btn btn-primary" id="go" ng-click="go()" name="go"/>Go!</button>
+              
+</div>
+
+          
+</div>                  
+
+      
+</div>
+
+  
+</div>
+  
+  
+<div id="map-canvas" class="jumbotron">
+</div>
+
+
+  
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places,visualization&v=3.exp">
+</script>
+
+ 
+ <script src="app.js"></script>
+ 
+ <script src="map.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		console.log("Hello");
+		$("#bank").click(function());		
+});
+
+</script>
+</body>
+
+</html>

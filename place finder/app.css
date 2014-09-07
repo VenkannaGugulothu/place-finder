@@ -1,0 +1,22 @@
+/*
+ World Map App
+ (C) @cse031sust02
+ */
+html, body{
+    height: 90%;
+    margin: 0px;
+    padding: 0px
+}
+#map-canvas {
+    height: 70%;
+    margin: 0px;
+    padding: 0px
+}
+.search-label{
+	color:#FFFFFF;
+	font-size: 25px;
+	font-family: "Verdana";
+}
+.navbar {
+	margin-bottom: 1px;
+}
